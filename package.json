@@ -1,5 +1,5 @@
 {
-  "name": "yields-k",
+  "name": "@pirxpilot/k",
   "description": "keyboard event dispatcher",
   "author": "Amir Abu Shareb <yields@icloud.com>",
   "version": "0.7.2",
@@ -30,7 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yields/k.git"
+    "url": "https://github.com/pirxpilot/k.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "lib"
+  ]
 }
