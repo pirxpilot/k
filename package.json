@@ -9,14 +9,12 @@
     "keyboard"
   ],
   "dependencies": {
-    "component-event": "*",
     "component-bind": "*",
     "component-os": "*",
     "yields-k-sequence": "*",
     "yields-keycode": "*"
   },
   "browser": {
-    "event": "component-event",
     "bind": "component-bind",
     "os": "component-os",
     "k-sequence": "yields-k-sequence",
