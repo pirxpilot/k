@@ -1,16 +1,21 @@
+PROJECT=k
+SRC=$(wildcard lib/*.js)
 
-SRC= $(wildcard lib/*.js)
+build: node_modules $(SRC)
+	mkdir -p build
+	browserify --require ./lib/index.js:$(PROJECT) --outfile build/build.js
+	browserify test/test.js --outfile build/test.js
 
-build: components $(SRC)
-	@component build --dev
+node_modules: package.json
+	npm install && touch $@
 
-components: component.json
-	@component install --dev
+lint:
+	jshint index.js
 
 clean:
-	@rm -fr build components template.js
+	rm -fr build node_modules
 
 test: build
-	@open test/index.html
+	@xdg-open test/index.html
 
-.PHONY: clean test
+.PHONY: clean lint build

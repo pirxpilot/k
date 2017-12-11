@@ -22,12 +22,6 @@
     "k-sequence": "yields-k-sequence",
     "keycode": "yields-keycode"
   },
-  "component": {
-    "scripts": {
-      "k/index.js": "lib/index.js",
-      "k/proto.js": "lib/proto.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/pirxpilot/k.git"

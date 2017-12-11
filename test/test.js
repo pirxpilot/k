@@ -3,7 +3,7 @@ describe('k', function(){
 
   var keycode = require('keycode')
     , assert = require('assert')
-    , dispatcher = require('k')
+    , dispatcher = require('../lib')
     , os = require('os');
 
   // superkey
