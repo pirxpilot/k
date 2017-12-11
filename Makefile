@@ -10,7 +10,7 @@ node_modules: package.json
 	npm install && touch $@
 
 lint:
-	jshint index.js
+	jshint $(SRC)
 
 clean:
 	rm -fr build node_modules
