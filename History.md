@@ -1,4 +1,12 @@
 
+1.0.0 / 2017-12-10
+==================
+
+ * remove component-bind dependency
+ * remove component-event dependency
+ * switch to browserify build
+ * rename to @pirxpilot/k
+
 0.7.2 / 2015-03-19
 ==================
 
